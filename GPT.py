@@ -1,7 +1,9 @@
 import telebot
 import random
 
-TOKEN = "5879031351:AAH6NKM0x3c5NgH-qX5SjBOiYbbbLJRFHBY"
+with open('pas.txt', 'r') as file:
+    TOKEN = file.read()
+
 bot = telebot.TeleBot(TOKEN)
 
 used_cities = []
